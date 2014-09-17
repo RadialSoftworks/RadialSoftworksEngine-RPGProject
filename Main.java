@@ -1,5 +1,8 @@
 package com.RadialSoftworks.www;
 
+import java.awt.event.KeyListener;
+import java.awt.event.MouseListener;
+
 import javax.swing.JFrame;
 
 public class Main {
@@ -10,6 +13,7 @@ public class Main {
 	private final ScreenFactory screenFactory;
 	private final GameThread gameThread;
 	private final KeyboardListener keyboardListener;
+	private final MousePadListener mousepadListener;
 	
 	
 	public Main(int windowX, int windowY, String title) {
@@ -26,12 +30,26 @@ public class Main {
 		screenFactory = new ScreenFactory(this);
 		gameThread = new GameThread(this);
 		keyboardListener = new KeyboardListener();
+		mousepadListener = new MousePadListener();
 		
 		// Adding Components
 		
 		window.add(gameThread);
 		window.addKeyListener(keyboardListener);
+		window.addMouseListener(mousepadListener);
 		
+		// Running the thread
+		
+		new Thread(gameThread).start();
+		
+	}
+	
+	public MouseListener getMouseListener() {
+		return mousepadListener;
+	}
+	
+	public KeyListener getKeyboardListener() {
+		return keyboardListener;
 	}
 	
 	public ScreenFactory getScreenFactory() {
