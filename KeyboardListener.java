@@ -23,11 +23,16 @@ public class KeyboardListener implements KeyListener {
 
 	@Override
 	public void keyTyped(KeyEvent event) {
-
-		keys[event.getKeyCode()] = true;
 		
 	}
 
-	
+	public boolean isKeyPressed(int key) {
+		return keys[key];
+	}
+
+	public boolean isKeyReleased(int key) {
+		return !keys[key];
+		
+	}
 	
 }

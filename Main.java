@@ -4,10 +4,17 @@ import javax.swing.JFrame;
 
 public class Main {
 	
+	// Class/Program Variables
+	
 	private final JFrame window = new JFrame();
 	private final ScreenFactory screenFactory;
+	private final GameThread gameThread;
+	private final KeyboardListener keyboardListener;
+	
 	
 	public Main(int windowX, int windowY, String title) {
+		
+		// Settings
 		
 		window.setSize(windowX, windowY);
 		window.setResizable(false);
@@ -17,6 +24,13 @@ public class Main {
 		window.setTitle(title);
 		window.setVisible(true);
 		screenFactory = new ScreenFactory(this);
+		gameThread = new GameThread(this);
+		keyboardListener = new KeyboardListener();
+		
+		// Adding Components
+		
+		window.add(gameThread);
+		window.addKeyListener(keyboardListener);
 		
 	}
 	
