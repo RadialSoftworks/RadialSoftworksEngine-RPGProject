@@ -11,7 +11,7 @@ public class ScreenFactory {
 		
 	}
 	
-	public void showScreen(Screen scren) {
+	public void showScreen(Screen screen) {
 		
 		this.screen = screen;
 		screen.onCreate();
