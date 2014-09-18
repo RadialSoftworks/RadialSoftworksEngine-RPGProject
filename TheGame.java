@@ -1,6 +1,6 @@
-// Run the engine from this class
-
 package com.RadialSoftworks.www;
+
+	// The engine is run from this class
 
 public class TheGame {
 	
