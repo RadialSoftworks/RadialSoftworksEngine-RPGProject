@@ -47,6 +47,7 @@ public class ItemGenerator {
 			System.out.println("You found a" + weaponQuality);
 
 			// Daggers
+			
 		} else if (weaponChooser == 3) {
 			if (damage <= 4) {
 				weaponQuality = ("n Iron ");
@@ -61,6 +62,7 @@ public class ItemGenerator {
 		}
 
 		// Enchantments (1)
+		
 		if (enchantment == 9)
 			rarity = rarity + 4;
 		if (enchantment == 8)
@@ -93,23 +95,27 @@ public class ItemGenerator {
 		}
 
 		// Displaying weapon statistics
+		
 		System.out.println("------------------------");
 		System.out.println("Stats: ");
 		System.out.println(" ");
 		System.out.println(weaponType + " Damage: " + damage);
 
 		// Display modifier
+		
 		if (modified == 1) {
 			System.out.println("Modifier: " + modifier);
 		}
 
 		// Enchantments (2)
+		
 		if (enchantment == 9)
 			System.out.println("Enchantment: Fire");
 		if (enchantment == 8)
 			System.out.println("Enchantment: Ice`");
 
 		// Calculating sword rarity
+		
 		System.out.println("------------------------");
 		if (rarity <= 4) {
 			System.out.println("This item is worthless.");
