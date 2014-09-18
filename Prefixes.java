@@ -1,26 +1,36 @@
 public class Prefixes {
 	public static void main(String[] args) {
-
+        //This selects a metal between 0 and 5
 		int metalPicker = 0 + (int) (Math.random() * 5);
+		
+		//This selects a weapon type between 0 and 4
 		int weaponPicker = 0 + (int) (Math.random() * 4);
+		
+		//This selects a Prefix between 0 and 21
 		int prefixPicker = 0 + (int) (Math.random() * 21);
+		
 		int weaponFindChance = 0 + (int) (Math.random() * 100);
-
+		/*The above line of code has the max number, change the
+		100 to make the chances lower.
+		The 15 in the below code is % of drop rate 15/100.*/
 		if (weaponFindChance <= 15) {
-
+			
+			//These are the metals for now(to be optimized)
 			String m0 = "Copper";
 			String m1 = "Bronze";
 			String m2 = "Iron";
 			String m3 = "Steel";
 			String m4 = "Mithril";
 			String metalPicked = "Fill";
-
+			
+			//These are the weapons for now(to be optimized) 
 			String w0 = "Short Sword";
 			String w1 = "Broadsword";
 			String w2 = "Falchion";
 			String w3 = "Dagger";
 			String weaponPicked = "Fill";
-
+			
+			//These are the prefixes for now(to be optimized)
 			String pf0 = "Inexspensive";
 			String pf1 = "Fierce";
 			String pf2 = "Mysterious";
@@ -43,26 +53,23 @@ public class Prefixes {
 			String pf19 = "Incredible";
 			String pf20 = "Thundering";
 			String prefixPicked = "Fill";
+			
+			switch(metalPicker)
+			{
+				case 0: metalPicked = m0; break;
+				case 1: metalPicked = m1; break;
+				case 2: metalPicked = m2; break;
+				case 3: metalPicked = m3; break;
+				case 4: metalPicked = m4; break;
+			}
 
-			if (metalPicker == 0)
-				metalPicked = m0;
-			else if (metalPicker == 1)
-				metalPicked = m1;
-			else if (metalPicker == 2)
-				metalPicked = m2;
-			else if (metalPicker == 3)
-				metalPicked = m3;
-			else if (metalPicker == 4)
-				metalPicked = m4;
-
-			if (weaponPicker == 0)
-				weaponPicked = w0;
-			else if (weaponPicker == 1)
-				weaponPicked = w1;
-			else if (weaponPicker == 2)
-				weaponPicked = w2;
-			else if (weaponPicker == 3)
-				weaponPicked = w3;
+			switch(weaponPicker)
+			{
+				case 0: weaponPicked = w0; break;
+				case 1: weaponPicked = w1; break;
+				case 2: weaponPicked = w2; break;
+				case 3: weaponPicked = w3; break;
+			}
 			
 			switch(prefixPicker)
 			{
@@ -88,7 +95,33 @@ public class Prefixes {
 				case 19:prefixPicked = pf19;break;
 				case 20:prefixPicked = pf20;break;
 			}
-			/*
+			System.out.println("You found a " + prefixPicked + " "
+					+ metalPicked + " " + weaponPicked + "!");
+		} else
+			System.out.println("You Didn't find anything!");
+		
+		  /*This is all old code below this point.
+			
+			if (metalPicker == 0)
+				metalPicked = m0;
+			else if (metalPicker == 1)
+				metalPicked = m1;
+			else if (metalPicker == 2)
+				metalPicked = m2;
+			else if (metalPicker == 3)
+				metalPicked = m3;
+			else if (metalPicker == 4)
+				metalPicked = m4;
+			
+			if (weaponPicker == 0)
+				weaponPicked = w0;
+			else if (weaponPicker == 1)
+				weaponPicked = w1;
+			else if (weaponPicker == 2)
+				weaponPicked = w2;
+			else if (weaponPicker == 3)
+				weaponPicked = w3;
+			
 			if (prefixPicker == 0)
 				prefixPicked = pf0;
 			else if (prefixPicker == 1)
@@ -132,11 +165,6 @@ public class Prefixes {
 			else if (prefixPicker == 20)
 				prefixPicked = pf20;
 				*/
-
-			System.out.println("You found a " + prefixPicked + " "
-					+ metalPicked + " " + weaponPicked + "!");
-		} else
-			System.out.println("You Didn't find anything!");
 
 	}
 }
