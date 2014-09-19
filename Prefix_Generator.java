@@ -1,3 +1,5 @@
+package com.RadialSoftworks.www;
+
 public class Prefix_Generator {
 
 	public static String prefixPicked;

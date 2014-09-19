@@ -1,3 +1,5 @@
+package com.RadialSoftworks.www;
+
 public class Sword_Generator {
 	public static void main(String[] args) {
 
