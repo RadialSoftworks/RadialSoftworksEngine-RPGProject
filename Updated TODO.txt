@@ -1,0 +1,34 @@
+These are the things we need to do: (in no particular order)
+
+1. Leveup/exp
+2. Quests
+3. Dialogue for npcs
+4. character stats
+5. Hud/ui
+6. Tiles
+7. Character/Monster/NPC models
+8. Story
+9. Crafting/Professions
+10. Battle system
+11. Skill trees
+12. Classes?
+13. Options
+14. Map Design
+15. Items
+16. Achievments
+17. Merchants
+18. Towns
+19. Map Generator
+20. Worldmap/minimap?
+21. Allignment
+22. Group Sharing (for exp and items)
+23. Equipment Stats/Set Bonuses?
+24. Exploration
+25. Journal
+26. 
+27.
+28.
+29.
+30.
+
+
