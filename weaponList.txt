@@ -1,0 +1,25 @@
+8.Weapon Types
+ a.Staff
+ b.Wand
+ c.Long-bow
+ d.Short-bow
+ e.Crossbow
+ f.Throwing Axes
+ g.Swords
+ h.Two-Handed Swords
+ i.Shield
+ j.Dagger
+ k.Axe
+ h.Hammer
+ i.Tomes
+ j.Spear
+ k.Mace
+ l.Bladed-Gauntlets
+ m.Flails
+ n.Lances
+ o.Tuning Forks
+ p.Chicken
+ q.
+ r.
+ s.
+ t.
