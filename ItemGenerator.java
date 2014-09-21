@@ -1,6 +1,7 @@
 package com.RadialSoftworks.www;
 
 public class ItemGenerator {
+	
 	public static void main(String[] args) {
 
 		// The Hobo of Power's Weapon Generator
