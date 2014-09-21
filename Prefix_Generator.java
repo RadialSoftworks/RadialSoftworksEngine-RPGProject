@@ -2,7 +2,7 @@ package com.RadialSoftworks.www;
 
 public class Prefix_Generator {
 
-	public static String prefixPicked;
+	public static String prefixPicked = "Inexpensive";
 	
 	static void getPrefix() {
 		
@@ -59,6 +59,7 @@ public class Prefix_Generator {
 			case 18:prefixPicked = pf18;break;
 			case 19:prefixPicked = pf19;break;
 			case 20:prefixPicked = pf20;break;
+			
 		}
 		
 	}
