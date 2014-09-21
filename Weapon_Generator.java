@@ -1,3 +1,4 @@
+package com.RadialSoftworks.www;
 
 public class Weapon_Generator {
 	static void genWeapon() {

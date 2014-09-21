@@ -1,3 +1,5 @@
+package com.RadialSoftworks.www;
+
 public class Enchantment_Generator {
 
 	public static String enchantmentPicked = "None";

@@ -1,3 +1,5 @@
+package com.RadialSoftworks.www;
+
 public class BluntWeapon_Generator {
 	
 	static void getbluntWeapon() {

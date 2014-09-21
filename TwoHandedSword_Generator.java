@@ -1,3 +1,5 @@
+package com.RadialSoftworks.www;
+
 public class TwoHandedSword_Generator {
 	
 	static void getTwoHandedSword() {

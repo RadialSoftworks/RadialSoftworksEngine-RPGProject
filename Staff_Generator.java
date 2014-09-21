@@ -1,3 +1,5 @@
+package com.RadialSoftworks.www;
+
 public class Staff_Generator {
 	
 	static void getStaff() {

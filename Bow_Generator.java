@@ -1,3 +1,5 @@
+package com.RadialSoftworks.www;
+
 public class Bow_Generator {
 	
 	static void getBow() {

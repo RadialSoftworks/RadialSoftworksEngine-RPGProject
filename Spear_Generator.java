@@ -1,3 +1,5 @@
+package com.RadialSoftworks.www;
+
 public class Spear_Generator {
 	
 	static void getSpear() {

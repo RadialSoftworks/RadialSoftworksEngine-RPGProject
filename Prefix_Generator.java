@@ -6,6 +6,9 @@ public class Prefix_Generator {
 	
 	static void getPrefix() {
 		
+		//Snailfecher's Prefixes
+		
+		
 		//This selects a Prefix between 0 and 21
 		int prefixPicker = 0 + (int) (Math.random() * 21);
 	

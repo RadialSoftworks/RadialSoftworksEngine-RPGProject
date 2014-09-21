@@ -1,3 +1,5 @@
+package com.RadialSoftworks.www;
+
 public class Dagger_Generator {
 	
 	static void getDagger() {

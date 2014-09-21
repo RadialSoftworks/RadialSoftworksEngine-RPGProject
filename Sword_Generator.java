@@ -1,7 +1,8 @@
 package com.RadialSoftworks.www;
 
 public class Sword_Generator {
-	public static void main(String[] args) {
+	
+	static void getSword() {
 
 		// The Hobo of Power's Weapon Generator 2.0
 
@@ -24,23 +25,25 @@ public class Sword_Generator {
 		// Calculating sword tier & rarity
 
 		if (swordDamage <= 60) { 
-			swordTier = ("Copper");
-			swordRarity = ("Common");
+			swordTier = "Copper";
+			swordRarity = "Common";
 		} else if (swordDamage <= 70)  { 
-			swordTier = ("Bronze");
-			swordRarity = ("Uncommon");
+			swordTier = "Bronze";
+			swordRarity = "Uncommon";
 		} else if (swordDamage <= 80)  {
-			swordTier = ("Iron");
-			swordRarity = ("Rare");
+			swordTier = "Iron";
+			swordRarity = "Rare";
 		} else if (swordDamage <= 90)  {
-			swordTier = ("Steel");
-			swordRarity = ("Ultra Rare");
+			swordTier = "Steel";
+			swordRarity = "Ultra Rare";
 		} else if (swordDamage <= 100) {
-			swordTier = ("Mithril");
-			swordRarity = ("Legendary");
+			swordTier = "Mithril";
+			swordRarity = "Legendary";
 		}
 		
+		// Getting a prefix & enchantment
 		Prefix_Generator.getPrefix();
+		Enchantment_Generator.getEnchantment();
 		
 		
 
@@ -48,5 +51,6 @@ public class Sword_Generator {
 		System.out.println("Sword: " + Prefix_Generator.prefixPicked + " " + swordTier + " " + swordType);
 		System.out.println("Damage: " + swordDamage);
 		System.out.println("Rarity: " + swordRarity);
+		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 	}
 }
